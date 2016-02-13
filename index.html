@@ -203,7 +203,7 @@
                             </div>
 
                             <div class="small-3 columns" id="image-thumb-4">
-                                <a data-open="modalForest"><img class="thumbnail" src="./images/forest.jpg" alt="Forest"/></a>
+                                <a data-open="modalBridge"><img class="thumbnail" src="./images/bridge.jpg" alt="Boston bridge in the Sunset"/></a>
                             </div>
                         </div>
                         <br><h2>Music</h2>
@@ -285,9 +285,9 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-<div class="reveal" id="modalForest" data-reveal>
-    <h1>Forest</h1>
-    <img class="img-responsive" src="./images/forest.jpg"/>
+<div class="reveal" id="modalBridge" data-reveal>
+    <h1>Boston Bridge in the Sunset</h1>
+    <img class="img-responsive" src="./images/bridge.jpg"/>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
@@ -306,11 +306,12 @@
 
             theater
                     .addActor('role', {speed: 0.6, accuracy: 0.8})
+                    .addScene('role:DATA', 700)
                     .addScene('role: WEB', 400)
                     .addScene('role: SOFTWARE', 400)
-                    .addScene('role:DATA')
                     .addScene('role:ANALYTICS')
-                    .addScene('role:NLP')
+                    .addScene('role:AI', 600)
+                    .addScene('role:NLP', 500)
                     .addScene(theater.replay.bind(theater));
 
             window.sr = ScrollReveal({reset: true});
