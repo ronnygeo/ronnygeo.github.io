@@ -115,7 +115,12 @@ body {
   color: #f4fff8;
   margin: auto;
   padding: 2em;
-  height: 75vh; }
+  height: 90vh; }
+
+#resume {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  padding: 2em; }
 
 .my-links a {
   text-decoration: none;
