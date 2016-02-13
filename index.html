@@ -184,48 +184,24 @@
                             <div class="small-3 columns">
                                 <a data-open="modalMountains"><img class="thumbnail" src="./images/mountains.jpg" alt="Mountains"></a>
                             </div>
-                                <div class="reveal" id="modalMountains" data-reveal>
-                                    <h1>Mountains</h1>
-                                    <img class="img-responsive" src="./images/mountains.jpg"/>
-                                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
+
                             <div class="small-3 columns">
                                 <a data-open="modalSunset"><img class="thumbnail" src="./images/sunset.jpg" alt="Sunset"/></a>
                             </div>
-                                <div class="reveal" id="modalSunset" data-reveal>
-                                    <h1>Sunset</h1>
-                                    <img class="img-responsive" src="./images/sunset.jpg"/>
-                                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
+
                             <div class="small-3 columns">
                                 <a data-open="modalHarbor"><img class="thumbnail" src="./images/harbor.jpg" alt="Boston Harbor"/></a>
                             </div>
-                                <div class="reveal" id="modalHarbor" data-reveal>
-                                    <h1>Boston Harbor</h1>
-                                    <img class="img-responsive" src="./images/harbor.jpg"/>
-                                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
+
                             <div class="small-3 columns">
                                 <a data-open="modalForest"><img class="thumbnail" src="./images/forest.jpg" alt="Forest"/></a>
                             </div>
-                                <div class="reveal" id="modalForest" data-reveal>
-                                    <h1>Forest</h1>
-                                    <img class="img-responsive" src="./images/forest.jpg"/>
-                                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
                         </div>
                         <br><h2>Music</h2>
                     <p>Music is my poison. Music sets the pace of my life, it sometimes even inspires me. If I like a song, I learn its lyrics by the next day.</p>
                         <br><h2>Travel</h2>
                     <p>New Experiences. That is travelling for me. I have been travelling most of my life. There is almost no place in Dubai and the UAE that I have not visited atleast once. We used to go on Road Trips on almost all the weekends. Most of my snaps are from my travels.</p>
+                    <div id="map" class="align-center"></div>
                     </div>
 
                 <blockquote class="blockquote-reverse">
@@ -236,8 +212,6 @@
 
 
 
-                <div class="page parallax-window" data-parallax="scroll"  data-ios-fix="true"
-                     data-image-src="./images/tunnel.jpg"></div>
 
 <div id="links" class="my-links" data-magellan-target="links">
                         <div class="row">
@@ -283,12 +257,43 @@
         </div>
 </div>
 
+<div class="reveal" id="modalMountains" data-reveal>
+    <h1>Mountains</h1>
+    <img class="img-responsive" src="./images/mountains.jpg"/>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="reveal" id="modalSunset" data-reveal>
+    <h1>Sunset</h1>
+    <img class="img-responsive" src="./images/sunset.jpg"/>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="reveal" id="modalHarbor" data-reveal>
+    <h1>Boston Harbor</h1>
+    <img class="img-responsive" src="./images/harbor.jpg"/>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="reveal" id="modalForest" data-reveal>
+    <h1>Forest</h1>
+    <img class="img-responsive" src="./images/forest.jpg"/>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/theater.min.js"></script>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
 <script src="js/smoothscroll.js"></script>
+<<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
 <script>
         (function(){
             var theater = theaterJS();
@@ -303,11 +308,11 @@
                     .addScene(theater.replay.bind(theater));
 
             window.sr = ScrollReveal({reset: true});
-            sr.reveal('#intro', {duration: 1000});
-            sr.reveal('#history', {duration: 1000});
-            sr.reveal('#projects', {duration: 1000});
+            sr.reveal('#intro', {duration: 500});
+            sr.reveal('#history', {duration: 500});
+            sr.reveal('#projects', {duration: 500});
             //sr.reveal('#interests', {duration: 500});
-            //sr.reveal('#photos', {duration: 2000});
+            sr.reveal('#photos', {duration: 1000});
             //sr.reveal('#links', {duration: 1000});
         })();
         $(document).foundation();
@@ -317,6 +322,21 @@
             $('#offCanvasLeft').removeClass('is-open');
             $('#offCanvasWrapper').removeClass('is-off-canvas-open').removeClass('is-open-left');
         });
+
+        function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+                center: {lat: 44.540, lng: -78.546},
+                disableDefaultUI: false,
+                draggable: false,
+                streetViewControl: false,
+                scaleControl: false,
+                zoomControl: false,
+                scrollwheel: false,
+                MapTypeId: 'TERRAIN',
+                mapTypeControl: false,
+                zoom: 8});
+        }
 </script>
 </body>
 </html>
