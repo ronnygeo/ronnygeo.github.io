@@ -163,4 +163,8 @@ footer {
   height: 50vh;
   background-color: #CCC; }
 
+@media (min-width: 640px) {
+  #intro {
+    margin-top: 0 !important; } }
+
 /*# sourceMappingURL=style.css.map */
