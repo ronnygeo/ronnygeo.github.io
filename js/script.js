@@ -17,7 +17,8 @@
 
     window.sr = ScrollReveal({reset: true});
     sr.reveal('#intro', {duration: 500});
-    sr.reveal('#history', {duration: 500});
+    sr.reveal('#education', {duration: 500});
+    sr.reveal('#experience', {duration: 2500});
     sr.reveal('#projects', {duration: 500});
     //sr.reveal('#interests', {duration: 500});
     sr.reveal('#image-thumb-1', {duration: 500});

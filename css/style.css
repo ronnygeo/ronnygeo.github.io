@@ -57,10 +57,11 @@ body {
   padding-top: 5vh !important;
   width: 100vw; }
 
-#education {
-  position: relative;
+#history {
   /*top: -2em; */
-  background-color: #FFFFFF; }
+  background-color: #222222;
+  color: #ffffff;
+  padding: 5vmin; }
 
 #intro-text {
   margin: auto;
@@ -120,12 +121,16 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   margin: auto;
   min-height: 5rem;
+  width: 100vw;
   padding: 1rem;
   transition: background-color 0.5s ease-in; }
 
 #resume a {
   color: deepskyblue;
   transition: color 0.5s linear; }
+
+#resume-text {
+  font-family: "Raleway", san-serif !important; }
 
 #resume:hover {
   background-color: rgba(255, 255, 255, 0.7);

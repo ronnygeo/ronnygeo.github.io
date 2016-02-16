@@ -1,7 +1,7 @@
 $main-font-stack: 'Titillium Web', sans-serif
 $paragraph-font-stack: 'Titillium Web', san-serif
 $heading-font-stack: 'Titillium Web', san-serif
-//$hero-font-stack: 'Raleway', san-serif
+$hero-font-stack: 'Raleway', san-serif
 
 // Custom Styles
 *
@@ -66,10 +66,12 @@ body
   //margin-top: 1rem
 
 
-#education
-  position: relative
+#history
+  //position: relative
   /*top: -2em;*/
-  background-color: #FFFFFF
+  background-color: #222222
+  color: #ffffff
+  padding: 5vmin
 
 
 #intro-text
@@ -140,13 +142,16 @@ body
   background-color: rgba(0,0,0,0.9)
   margin: auto
   min-height: 5rem
+  width: 100vw
   padding: 1rem
   transition: background-color 0.5s ease-in
 
 #resume a
   color: deepskyblue
-  //font-family: $paragraph-font-stack !important
   transition: color 0.5s linear
+
+#resume-text
+  font-family: $hero-font-stack !important
 
 #resume:hover
   background-color: rgba(255,255,255,0.7)
@@ -208,6 +213,9 @@ footer
   background: transparent
   //filter: blur(20px)
   //white-space: nowrap
+
+.parallax-mirror
+  //filter: blur(1px)
 
 #map
   text-align: center
