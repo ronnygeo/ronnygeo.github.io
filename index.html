@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
     <!--<link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>-->
     <link href="css/foundation.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
-    <script src="https://raw.githubusercontent.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
     <meta name="description" content="Ronny Mathew's Personal Homepage.">
     <meta name="keywords" content="Node,node.js,angular,angular.js,HTML,CSS,Sass,JavaScript,Python,Rails,Ruby,Ronny,George,Mathew,ronnygeo">
     <meta name="author" content="Ronny Mathew">
@@ -34,6 +35,7 @@
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#history">History</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Technology</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#links">Links</a></li>
                 <li><a href="#resume">Download Resume</a></li>
@@ -51,6 +53,7 @@
                     <li><a href="#intro">About</a></li>
                     <li><a href="#history">History</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Technology</a></li>
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#links">Links</a></li>
                     <li><a href="#resume">Resume</a></li>
@@ -59,8 +62,8 @@
 
         <div data-off-canvas-content>
             <div  id="main-container">
-                <div class="parallax-window" data-parallax="scroll" data-ios-fix="true" data-bleed="50" data-image-src="images/boston.jpg">
-                    <div id="intro" class="row column" data-magellan-target="intro">
+                <div class="parallax-window" data-parallax="scroll" data-ios-fix="true" data-bleed="50" data-image-src="images/boston.jpg" data-magellan-target="intro">
+                    <div id="intro" class="row column">
                         <div id="intro-text">
                             <!--<div class="row align-center">-->
                             <img src="images/me.jpg" id="intro-img" width="150px"/>
@@ -195,8 +198,44 @@
                     </div>
                 </div>
 
-                <div class="parallax-window" data-parallax="scroll" data-ios-fix="true"
-                     data-image-src="./images/bicycle.jpg"></div>
+                <!--<div class="parallax-window" data-parallax="scroll" data-ios-fix="true"-->
+                     <!--data-image-src="./images/bicycle.jpg"></div>-->
+
+                <div id="skills" class="parallax-window page" data-parallax="scroll" data-ios-fix="true" data-bleed="10" data-image-src="images/tunnel.jpg" data-magellan-target="skills">
+                    <h1>Technology</h1>
+
+                    <div class="row align-spaced" data-equalizer>
+                        <div class="column small-12 medium-3 skill-box" data-equalizer-watch>
+                            <i class="devicon-python-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                        <div class="column  small-12 medium-3 skill-box skill-box-bigger-font" data-equalizer-watch>
+                            <i class="devicon-nodejs-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box skill-box-bigger-font" data-equalizer-watch>
+                            <i class="devicon-angularjs-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box" data-equalizer-watch>
+                            <i class="devicon-html5-plain-wordmark"></i>&nbsp;<i class="devicon-css3-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box" data-equalizer-watch>
+                            <i class="devicon-rails-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box" data-equalizer-watch>
+                            <i class="devicon-mongodb-plain-wordmark"></i>
+                        </div>
+                        <div class="column small-12 medium-3 skill-box" data-equalizer-watch>
+                            <i class="devicon-mysql-plain-wordmark"></i>&nbsp;<i class="devicon-postgresql-plain-wordmark"></i>
+                        </div>
+                        <div class="column skill-box small-12 medium-3" data-equalizer-watch>
+                            <i class="devicon-cplusplus-plain"></i>
+                        </div>
+
+                    </div>
+
+                </div>
 
                 <div id="interests" class="page" data-magellan-target="interests">
                     <!--<div class="bg-dark">-->
@@ -235,7 +274,7 @@
                 </blockquote>
 
             <div class="parallax-window" data-parallax="scroll" data-ios-fix="true"
-                    data-image-src="./images/tunnel.jpg"></div>
+                    data-image-src="./images/bicycle.jpg"></div>
 
                 <div id="links" class="my-links" data-magellan-target="links">
                     <div class="row">
