@@ -174,8 +174,7 @@ footer {
 .parallax-window {
   min-height: 60vh;
   width: 100%;
-  background: transparent;
-  filter: blur(20px); }
+  background: transparent; }
 
 #map {
   text-align: center;
