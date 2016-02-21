@@ -103,6 +103,9 @@ body {
   transform: skewY(2deg);
   -webkit-transform: skewY(2deg); }
 
+#projects {
+  padding-top: 5.5em; }
+
 #interests {
   background-color: #2e2e2e;
   color: #ffffff;
@@ -111,6 +114,7 @@ body {
 
 #skills {
   padding: 1rem;
+  padding-top: 2rem;
   display: block;
   color: white;
   margin: auto; }
@@ -130,6 +134,13 @@ body {
 
 .skill-box-bigger-font {
   font-size: 8rem !important; }
+
+#image-after {
+  background-image: url("../images/bicycle.jpg");
+  background-size: cover;
+  background-position: middle;
+  width: 100vw;
+  height: 50vh; }
 
 .my-links {
   background-color: deepskyblue;
