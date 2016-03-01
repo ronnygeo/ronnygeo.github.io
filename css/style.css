@@ -89,7 +89,8 @@ body {
   transform: skewY(-2deg);
   padding: 3vmin;
   overflow: hidden;
-  max-width: 100vw !important; }
+  max-width: 100vw !important;
+  width: 100vw; }
 
 #about-me p {
   text-align: center; }
