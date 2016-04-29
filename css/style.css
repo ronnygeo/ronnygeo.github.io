@@ -12,8 +12,10 @@ body {
   position: fixed;
   width: 100vw;
   z-index: 250;
-  padding: 0.2rem !important;
-  margin-bottom: 5vh; }
+  padding: 0.4rem !important;
+  margin-bottom: 5vh;
+  height: 3.2rem;
+  opacity: 0.9; }
 
 .title-bar {
   position: fixed;
