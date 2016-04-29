@@ -1,3 +1,177 @@
 {
-  "name": "Ronny Mathew"
+  "myName": "Ronny Mathew",
+  "pages": {
+    "intro": {
+      "about-me": {
+        "title": "About Me",
+        "content": "I'm a Software Engineer currently honing my skills at Northeastern University, Boston.<br>Key Areas of Expertise: Data Analytics and Management (SQL & NoSQL), Full Stack Web Development (MEAN & Rails) and Software Engineering (Python, C++)."
+      }
+    },
+    "education": {
+      "title": "Education",
+      "univ": [
+        {
+          "title": "Northeastern University",
+          "location": "Boston, MA",
+          "college": "College of Computer and Information Science",
+          "degree": "Candidate for Master of Science in Computer Science",
+          "image": "images/neu.jpg",
+          "time": "September 2015 to Present",
+          "courses": [
+            "Algorithms",
+            "Foundations of Artificial Intelligence",
+            "Web Development",
+            "Distributed Data Processing with Map Reduce",
+            "Data Mining",
+            "Programming Design Paradigms"
+          ]
+        },
+        {
+          "title": "Heriot-Watt University",
+          "location": "Dubai, UAE",
+          "college": "School of Mathematical and Computer Sciences",
+          "degree": "Master of Science in Computer Science",
+          "image": "images/hwu.jpg",
+          "time": "January 2012 to November 2013",
+          "courses": [
+            "eCommerce Technologies",
+            "Database Management and Systems",
+            "Systems Programming",
+            "Network Applications",
+            "Mobile Programming",
+            "Dissertation Project"
+          ]
+        },
+        {
+          "title": "University of Kerala",
+          "location": "Kerala, India",
+          "college": "Mar Baselios College of Engineering and Technology",
+          "degree": "Bachelor of Technology in Electronics and Communication Engineering, First Class.",
+          "image": "images/uok.jpg",
+          "time": "October 2006 to August 2010",
+          "courses": []
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "work": [
+        {
+          "title": "Northeastern University",
+          "location": "Boston, MA",
+          "position": "Research Assistant",
+          "image": "images/neu.jpg",
+          "time": "February 2016 to Present",
+          "desc": [
+            "Evaluating the social influences on different cultures by applying Machine Learning Algorithms using Python.",
+            "Created a data extraction layer to get data from the Yelp dataset within MongoDB with MapReduce."
+          ]
+        },
+        {
+          "title": "Grey Ocean Analytics",
+          "location": "Bengaluru, India",
+          "position": "Software Engineer (Contract)",
+          "image": "images/bangalore.jpg",
+          "time": "February 2015 to August 2015",
+          "desc": [
+            "Developed modules of an Artificial Intelligence project for the financial sector using Neo4j, Python, SNS and SQS.",
+            "Led a team of five junior developers during the project ensuring high performance and completion before deadline.",
+            "Designed and deployed MongoDB and Neo4j databases on Amazon Web Services EC2."
+          ]
+        },
+        {
+          "title": "Evolvence Capital & Ginza Holdings",
+          "location": "Dubai, UAE",
+          "position": "IT Administrator",
+          "image": "images/dubai.jpg",
+          "time": "Apr 2012 to Dec 2014",
+          "desc": [
+            "Deployed IT systems and LS Retail with Microsoft Dynamics NAV 2009 for all Retail & Hospitality outlets of the group.",
+            "Developed an eCommerce solution for Ginza using Magento. Maintained five CMS (WordPress) sites of the group.",
+            "Developed and maintained Microsoft SQL Server and MySQL databases for ERP and other systems.",
+            "Installed Linux servers and AV software systems for Interactive Displays and Video Walls at Real Madrid Café."
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "projects": [
+        {
+          "title": "Northeastern University",
+          "location": "Boston, MA",
+          "time": "Nov 2015 to Dec 2015",
+          "projects": [
+            {
+              "name": "Model User Preferences for Location Based Recommendations",
+              "desc": "Developed project to Model User Preferences for Location Based Recommendations</a> using python and mongoDB.",
+              "url": "http://rohitbegani.github.io/FAIproject-CS5100/",
+              "tech": [
+                "Python",
+                "MongoDB",
+                "td-KNN",
+                "Neural Networks"
+              ]
+            },
+            {
+              "time": "Nov 2015 to Dec 2015",
+              "name": "Model User Preferences for Location Based Recommendations",
+              "desc": "Developed project to Model User Preferences for Location Based Recommendations</a> using python and mongoDB.",
+              "url": "http://rohitbegani.github.io/FAIproject-CS5100/",
+              "tech": [
+                "Python",
+                "MongoDB",
+                "td-KNN",
+                "Neural Networks"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Heriot-Watt University",
+          "location": "Dubai, UAE",
+          "time": "Jan 2012 to Nov 2013",
+          "projects": [
+            {
+              "name": "Model User Preferences for Location Based Recommendations",
+              "desc": "Developed project to Model User Preferences for Location Based Recommendations</a> using python and mongoDB.",
+              "url": "http://rohitbegani.github.io/FAIproject-CS5100/",
+              "tech": [
+                "Python",
+                "MongoDB",
+                "td-KNN",
+                "Neural Networks"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interests": {
+      "photography": {
+        "title": "Photography",
+        "desc": "There are so many wonderful things around us that we take for granted. Through photography, I hope to bring these to attention, so that everyone can appreciate its beauty. The photos you find on this site are some of my work. If you are a fellow photographer, connect with me on 500px",
+        "photos": [
+          "./images/mountains.jpg",
+          "./images/sunset.jpg",
+          "./images/harbor.jpg",
+          "./images/bridge.jpg"
+        ]
+      },
+      "music": {
+        "title": "Music",
+        "desc": "Music is one of the things that I cannot live without. It sets the pace of my day and sometimes even inspires me. If I like a song, I learn the lyrics by the next day. I'm also an occasional singer, connect with me on SoundCloud to listen to some of my tracks."
+      },
+      "travel": {
+        "title": "Travel",
+        "desc": "New Places, New Experiences. I have been travelling most of my life. It is difficult to find a place that I haven't been to in the cities that I have lived in. Most of my snaps are from my travels."
+      }
+    }
+  },
+  "quotes": [
+    {
+      "text": "If you feel like you are working for someone, you are not doing it right..",
+      "author": "Me"
+    }
+  ]
 }
