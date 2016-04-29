@@ -1,5 +1,5 @@
 {
-  "name": "Ronny Mathew's HomePage",
+  "name": "Ronny Mathews HomePage",
   "homepage": "https://github.com/ronnygeo/ronnygeo.github.io",
   "authors": [
     "ronnygeo <ronnygeomatt@gmail.com>"
@@ -14,5 +14,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "react": "^15.0.1"
+  }
 }
