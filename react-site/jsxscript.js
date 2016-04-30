@@ -11,11 +11,11 @@ var AccordionItem = React.createClass({
     render: function () {
         return (
             <li className="accordion-item" data-accordion-item="">
-            <a href="#" className="accordion-title">{this.props.title}</a>
-            <div className="accordion-content" data-tab-content="">
-                {this.props.children}
-            </div>
-        </li>
+                <a href="#" className="accordion-title">{this.props.title}</a>
+                <div className="accordion-content" data-tab-content="">
+                    {this.props.children}
+                </div>
+            </li>
         );
     }
 });
@@ -36,21 +36,63 @@ var AccordionDefault = React.createClass({
     }
 });
 
-var ContentWrapper = React.createClass({
+var IntroText = React.createClass({
     render: function () {
         return (
-            <h1>Hello!</h1>,
-            <AccordionDefault data={data} />
+            <div id="intro-text">
+                <img src="../images/me.jpg" id="intro-img" width="150px"/>
+                <h1>RONNY MATHEW</h1>
+                <h2>I WORK ON <span id="role"></span></h2>
+            </div>
         );
     }
 });
 
+var AboutMe = React.createClass({
+    render: function () {
+        return (
+            <div className="align-bottom" id="about-me">
+                <h1>About Me</h1>
+                <p className="text-justify">I'm a Software Engineer currently honing my skills at Northeastern University, Boston.
+                    <br />Key Areas of Expertise: Data Analytics and Management (SQL & NoSQL), Full Stack Web Development (MEAN & Rails) and Software Engineering (Python, C++).</p>
+            </div>
+        );
+    }
+});
 
+var IntroPage = React.createClass({
+    render: function () {
+        return (
+            <div id="intro" className="page">
+                Introduction
+                {                // <IntroText />
+                }{// <AboutMe />
+            }
+            </div>
+        );
+    }
+});
 
+var Page = React.createClass({render: function () {
+    return (
+        <div className="page">Page1</div>
+    );
+}
+});
 
-
-
-
+var ContentWrapper = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <IntroPage />
+                <Page />
+                <Page />
+                <Page />
+            </div>
+            // <AccordionDefault data={data} />
+        );
+    }
+});
 
 ReactDOM.render(<ContentWrapper />,
     document.getElementById('content-wrapper'));
