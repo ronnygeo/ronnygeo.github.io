@@ -40,7 +40,8 @@ var IntroText = React.createClass({
     render: function () {
         return (
             <div id="intro-text">
-                <img src="../images/me.jpg" id="intro-img" width="150px"/>
+                {//<img src="../images/me.jpg" id="intro-img" width="150px"/>
+                }
                 <h1>RONNY MATHEW</h1>
                 <h2>I WORK ON <span id="role"></span></h2>
             </div>
@@ -51,7 +52,7 @@ var IntroText = React.createClass({
 var AboutMe = React.createClass({
     render: function () {
         return (
-            <div className="align-bottom" id="about-me">
+             <div className="align-bottom" id="about-me">
                 <h1>About Me</h1>
                 <p className="text-justify">I'm a Software Engineer currently honing my skills at Northeastern University, Boston.
                     <br />Key Areas of Expertise: Data Analytics and Management (SQL & NoSQL), Full Stack Web Development (MEAN & Rails) and Software Engineering (Python, C++).</p>
@@ -65,17 +66,63 @@ var IntroPage = React.createClass({
         return (
             <div id="intro" className="page">
                 Introduction
-                {                // <IntroText />
-                }{// <AboutMe />
-            }
+                 <IntroText />
+                 <AboutMe />
             </div>
         );
     }
 });
 
+var Project = React.createClass({
+    render: function () {
+        return (
+        <div className="project"></div>
+        );
+    }
+});
+
+var ProjectsPage = React.createClass(
+    {
+        render: function () {
+            return (
+                <div className="page">
+                    Projects
+            <div className="projects-container">
+            <Project />
+            </div>
+                    </div>
+            );
+        }
+    }
+);
+
+var EducationCard = React.createClass(
+    {
+        render: () => {
+            return (
+                <div className="education-page">
+                <div className="education-card">
+                <div className="education-university">Northeastern University</div>
+                    <div className="education-degree">Candidate for Master of Science in Computer Science</div>
+                    <div className="education-courses">
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Algorithms</li>
+                    </ul>
+                    </div>
+                </div>
+                    </div>
+            );
+        }
+    }
+);
+
+
+
 var Page = React.createClass({render: function () {
     return (
-        <div className="page">Page1</div>
+        <div id={this.props.id} className="page">{this.props.title}</div>
     );
 }
 });
@@ -85,9 +132,11 @@ var ContentWrapper = React.createClass({
         return (
             <div>
                 <IntroPage />
-                <Page />
-                <Page />
-                <Page />
+                <Page id="academics" title="Academics" />
+                <Page id="experience" title="Experience"/>
+                <Page id="projects" title="Projects" />
+                <ProjectsPage />
+                    <EducationCard />
             </div>
             // <AccordionDefault data={data} />
         );
