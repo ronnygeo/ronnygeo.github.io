@@ -140,7 +140,7 @@ body {
   font-size: 8rem !important; }
 
 #image-after {
-  background-image: url("../images/sunsetbeach.jpg");
+  background-image: url("../sunsetbeach.jpg");
   background-size: cover;
   background-position-y: 70%;
   background-position-x: 50%;
