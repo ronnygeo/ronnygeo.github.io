@@ -1,9 +1,11 @@
 * {
   font-size: 1em;
-  font-family: "Titillium Web", sans-serif; }
+  font-family: "Titillium Web", "Helvetica Neue", sans-serif;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Titillium Web", san-serif; }
+  font-family: "Titillium Web", san-serif;
+  font-weight: 300; }
 
 body {
   overflow-x: hidden; }
@@ -43,8 +45,7 @@ body {
 .page {
   width: 100vw;
   min-height: 100vh;
-  padding-top: 10vh;
-  margin-top: 1rem; }
+  padding-top: 10vh; }
 
 #intro {
   /*background:url("../images/boston.jpg"); */
@@ -171,7 +172,7 @@ body {
   transition: color 0.5s linear; }
 
 #resume-text {
-  font-family: "Raleway", san-serif !important; }
+  font-family: "Helvetica Neue", "Raleway", san-serif !important; }
 
 #resume:hover {
   background-color: rgba(255, 255, 255, 0.7);
