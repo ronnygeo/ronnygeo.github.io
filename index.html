@@ -275,7 +275,7 @@
                         Through photography, I hope to bring these to attention, so that everyone can appreciate its beauty. The photos you find on this site are some of my work. If you are a fellow photographer, connect with me on 500px.</p>
                     <div class="row align-middle" id="photos">
                         <div class="small-3 columns" id="image-thumb-1">
-                            <a data-open="modalChicago"><img class="thumbnail" src="./images/chicago.jpg" alt="Chicago"></a>
+                            <a data-open="modalChicago"><img class="thumbnail" width=70% src="./images/chicago.jpg" alt="Chicago"></a>
                         </div>
 
                         <div class="small-3 columns" id="image-thumb-2">
@@ -299,7 +299,12 @@
 
 
 
-            <div class="parallax-window" id="image-after">
+            <!--<div class="parallax-window" id="image-after">-->
+
+                <div class="parallax-window" data-parallax="scroll" data-ios-fix="true" data-natural-width="100vw" data-positionY="left"
+                     data-image-src="./images/sunsetbeach.jpg">
+                </div>
+
                 <!--<blockquote class="blockquote-reverse">-->
                 <!--<p>You never know when your visa to this world expires, but before it does, make sure you have done something that-->
                     <!--people will remember you for.</p>-->
@@ -359,7 +364,7 @@
 </div>
 
 <div class="reveal" id="modalChicago" data-reveal>
-    <br><img class="img-responsive" src="./images/chicago.jpg"/>
+    <br><img class="img-responsive" width=70% src="./images/chicago.jpg"/>
     <h4 class="text-center">Inside Chicago</h4>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
