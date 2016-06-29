@@ -151,6 +151,7 @@ body {
 
 .my-links {
   background-color: #878792;
+  background-image: url("../images/lines.svg");
   min-width: 50vw;
   color: #f4fff8;
   margin: auto;
