@@ -67,7 +67,7 @@ body {
   padding: 5vmin; }
 
 #intro-text {
-  margin: auto;
+  margin: 5vh auto 25vh auto;
   text-align: center;
   color: #000000;
   padding: 3vh;
@@ -81,7 +81,7 @@ body {
   margin-bottom: 1vh; }
 
 #about-me {
-  position: relative;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1em;
   color: white;
@@ -92,7 +92,9 @@ body {
   transform: skewY(-2deg);
   padding: 3vmin;
   overflow: hidden;
-  width: 100vw !important; }
+  width: 100vw !important; 
+  bottom: 0;
+}
 
 #about-me p {
   text-align: center; }
