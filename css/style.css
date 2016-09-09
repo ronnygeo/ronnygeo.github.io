@@ -92,9 +92,9 @@ body {
   transform: skewY(-2deg);
   padding: 3vmin;
   overflow: hidden;
-  width: 100vw !important; 
+  width: 100vw !important;
   bottom: 0;
-}
+  left: 0; }
 
 #about-me p {
   text-align: center; }
