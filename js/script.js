@@ -7,12 +7,13 @@
 
     theater
         .addActor('role', {speed: 0.6, accuracy: 0.8})
+        .addScene('role:AI', 600)
+        .addScene('role:VISION', 500)
+        .addScene('role:NLP', 500)
         .addScene('role:DATA', 700)
+        .addScene('role:ANALYTICS')
         .addScene('role: WEB', 400)
         .addScene('role: SOFTWARE', 400)
-        .addScene('role:ANALYTICS')
-        .addScene('role:AI', 600)
-        .addScene('role:NLP', 500)
         .addScene(theater.replay.bind(theater));
 
     window.sr = ScrollReveal({reset: true});
