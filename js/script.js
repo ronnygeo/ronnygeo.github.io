@@ -21,36 +21,18 @@
     sr.reveal('#education', {duration: 500});
     sr.reveal('#experience', {duration: 1000});
     sr.reveal('#projects', {duration: 500});
-    //sr.reveal('#interests', {duration: 500});
     sr.reveal('#image-thumb-1', {duration: 100});
     sr.reveal('#image-thumb-2', {duration: 300});
     sr.reveal('#image-thumb-3', {duration: 500});
     sr.reveal('#image-thumb-4', {duration: 700});
-
-
-    //sr.reveal('#links', {duration: 1000});
 })();
+
 $(document).foundation();
+
 $('#offCanvasLeft').click(function(){
-    //e.preventDefault();
-//    $("#closeOffCanvas").click();
     $('#offCanvasLeft').removeClass('is-open');
     $('#offCanvasLeft').attr('aria-hidden',true);
     $('#offCanvasWrapper').removeClass('is-off-canvas-open').removeClass('is-open-left');
 });
-$('a').smoothScroll();
 
-//function initMap() {
-//    var mapDiv = document.getElementById('map');
-//    var map = new google.maps.Map(mapDiv, {
-//        center: {lat: 44.540, lng: -78.546},
-//        disableDefaultUI: false,
-//        draggable: false,
-//        streetViewControl: false,
-//        scaleControl: false,
-//        zoomControl: false,
-//        scrollwheel: false,
-//        MapTypeId: 'OCEANIC',
-//        mapTypeControl: false,
-//        zoom: 1});
-//}
+$('a').smoothScroll();

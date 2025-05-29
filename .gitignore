@@ -3,3 +3,5 @@
 .idea
 idea/*
 .htmllintrc
+bower_components/
+react-site/
