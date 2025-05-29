@@ -135,21 +135,23 @@ body {
   border-radius: 3px;
   box-shadow: 0 2px 3px black, 1px 1px 5px #1f1f1f; }
 
-.skill-container {
-  box-shadow: 1px 3px 28px #000000;
-  border: black solid 0.5px;
-  background-color: rgba(255, 255, 0, 0.5); }
+.skill-text-box {
+  padding: 2rem; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #f4fff8;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 2vw;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px black, 1px 1px 5px #1f1f1f;
+  display: flex; /* For vertical centering */
+  justify-content: center; /* For horizontal centering */
+  align-items: center; /* For vertical centering */
+  min-height: 100px; /* Ensure a minimum height similar to other boxes */
+}
 
 .skill-box-bigger-font {
   font-size: 8rem !important; }
-
-#image-after {
-  background-image: url("../images/sunsetbeach.jpg");
-  background-size: cover;
-  background-position-y: 70%;
-  background-position-x: 50%;
-  width: 100vw;
-  height: 50vh; }
 
 .my-links {
   background-color: #878792;
@@ -193,20 +195,6 @@ body {
   text-decoration: none;
   color: #FFFFFF; }
 
-/*font-size: 3em; */
-/* div Styling classes. */
-.overlay-dark {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.overlay-light {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-.bg-dark {
-  background-color: rgba(20, 20, 20, 0.9); }
-
-.bg-light {
-  background-color: rgba(200, 200, 200, 0.9); }
-
 footer {
   height: 10vh;
   padding: 1vmin;
@@ -228,12 +216,6 @@ footer {
   min-height: 60vh;
   width: 100%;
   background: transparent; }
-
-#map {
-  text-align: center;
-  width: 85vw;
-  height: 50vh;
-  background-color: #CCC; }
 
 @media (min-width: 640px) {
   #intro {
