@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0; /* Common reset */
+  font-family: 'Titillium Web', sans-serif; /* From original CSS link */
+  /* If other global styles from original style.css need to be here, add them */
+}
+
+/* Placeholder for any other global styles that might be needed.
+   For instance, if style.css had body styles, they could be merged here
+   or kept in style.css and imported in App.jsx.
+   The current plan has style.css imported in App.jsx, which is fine.
+*/
