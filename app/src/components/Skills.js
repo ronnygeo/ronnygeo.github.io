@@ -3,9 +3,7 @@ function Skills() {
   // will require JavaScript to function. They are preserved here, but full interactivity
   // may need additional setup or React-specific libraries for Foundation.
 
-  // Image paths are kept as is for now (e.g., "./images/tensorflow_new.svg")
-  // These will need to be updated or handled when static assets are properly configured.
-
+  // Image paths are relative to app/index.html
   return (
     <div 
       id="skills" 
@@ -13,27 +11,27 @@ function Skills() {
       data-parallax="scroll" 
       data-ios-fix="true" 
       data-bleed="10" 
-      data-image-src="images/tunnel.jpg" // This path will need to be correct relative to the final deployment
+      data-image-src="images/tunnel.jpg" // This path is relative to app/index.html
       data-magellan-target="skills"
     >
       <h1>Technology</h1>
 
       <div className="row align-spaced align-stretch" data-equalizer>
         <div className="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
-          <img src="./images/tensorflow_new.svg" alt="TensorFlow" style={{ maxWidth: '40%' }} />
-          <img src="./images/pytorch_new.svg" alt="PyTorch" style={{ maxWidth: '40%' }} />
+          <img src="images/tensorflow_new.svg" alt="TensorFlow" style={{ maxWidth: '40%' }} />
+          <img src="images/pytorch_new.svg" alt="PyTorch" style={{ maxWidth: '40%' }} />
         </div>
         <div className="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
-          <img src="./images/huggingface_new.svg" alt="Hugging Face" style={{ maxWidth: '50%' }} />
+          <img src="images/huggingface_new.svg" alt="Hugging Face" style={{ maxWidth: '50%' }} />
         </div>
         <div className="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
-          <img src="./images/langchain_new.png" alt="Langchain" style={{ maxWidth: '60%' }} />
+          <img src="images/langchain_new.png" alt="Langchain" style={{ maxWidth: '60%' }} />
         </div>
         <div className="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
-          <img src="./images/apache_spark.png" alt="Apache Spark" style={{ maxWidth: '60%' }} />
+          <img src="images/apache_spark.png" alt="Apache Spark" style={{ maxWidth: '60%' }} />
         </div>
         <div className="column small-12 medium-3 skill-box align-middle" data-equalizer-watch>
-          <img src="./images/opencv.png" alt="OpenCV" style={{ maxWidth: '50%' }} />
+          <img src="images/opencv.png" alt="OpenCV" style={{ maxWidth: '50%' }} />
         </div>
         <div className="column small-12 medium-3 skill-box skill-text-box align-middle" data-equalizer-watch>
           <span>AI Agents</span>

@@ -1,4 +1,13 @@
 function Portfolio() {
+  React.useEffect(() => {
+    if (window.sr) {
+      // The component's main div has id="projects"
+      window.sr.reveal('#projects', { duration: 500 });
+    } else {
+      console.error("ScrollReveal (sr) is not initialized - Portfolio.js");
+    }
+  }, []); // Empty dependency array to run once on mount
+
   // Note: Foundation specific attributes like data-magellan-target
   // will require JavaScript to function. They are preserved here.
   return (

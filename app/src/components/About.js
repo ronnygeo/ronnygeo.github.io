@@ -3,12 +3,34 @@ function About() {
     width: '100vw'
   };
 
-  // The span for role will be dynamic later, for now, it's empty.
-  // Image src "images/me.jpg" is kept as is for now.
-  // The surrounding <div id="intro" class="row column"> from the original structure
-  // and <div class="parallax-window" ...> are not included here; this component
-  // focuses on the "intro-text" and "about-me" content itself.
-  // These could be wrapped by a layout component later.
+  React.useEffect(() => {
+    // Initialize TheaterJS
+    if (typeof theaterJS === 'function') {
+      const theater = theaterJS();
+      theater
+        .addActor('role', { speed: 0.6, accuracy: 0.8 })
+        .addScene('role:AI', 600)
+        .addScene('role:VISION', 500)
+        .addScene('role:NLP', 500)
+        .addScene('role:DATA', 700)
+        .addScene('role:ANALYTICS')
+        .addScene('role: WEB', 400)
+        .addScene('role: SOFTWARE', 400)
+        .addScene(theater.replay.bind(theater));
+    } else {
+      console.error("theaterJS is not loaded - About.js");
+    }
+
+    // Initialize ScrollReveal for #intro (which is the main div of this component)
+    if (window.sr) {
+      // The component's main div has id="intro"
+      window.sr.reveal('#intro', { duration: 500 }); 
+    } else {
+      console.error("ScrollReveal (sr) is not initialized - About.js");
+    }
+    
+  }, []); // Empty dependency array means this effect runs once after the component mounts
+
   return (
     <div id="intro" className="row column">
       <div id="intro-text">

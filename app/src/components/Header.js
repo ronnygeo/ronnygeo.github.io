@@ -1,4 +1,34 @@
 function Header() {
+  React.useEffect(() => {
+    if (typeof $ !== 'undefined') {
+      const $offCanvasLeft = $('#offCanvasLeft');
+      
+      // The click handler for closing the off-canvas menu
+      $offCanvasLeft.on('click.app', function(){ // Added .app namespace for easier removal
+        // It's good practice to ensure these elements exist before manipulating
+        const $offCanvasWrapper = $('#offCanvasWrapper'); // This ID should be on a main app wrapper
+
+        if ($offCanvasLeft.length) {
+          $offCanvasLeft.removeClass('is-open');
+          $offCanvasLeft.attr('aria-hidden', true);
+        }
+        
+        // This part depends on the offCanvasWrapper being present in the DOM,
+        // likely rendered by App.js or a higher-order component.
+        if ($offCanvasWrapper.length) {
+          $offCanvasWrapper.removeClass('is-off-canvas-open').removeClass('is-open-left');
+        }
+      });
+
+      // Return a cleanup function to remove the event listener
+      return () => {
+        $offCanvasLeft.off('click.app');
+      };
+    } else {
+      console.error("jQuery is not loaded - Header.js");
+    }
+  }, []); // Empty dependency array to run once on mount
+
   // Note: Foundation specific attributes like data-responsive-toggle, data-hide-for, data-open, data-off-canvas, data-dropdown-menu, data-magellan-target, data-responsive-menu might require specific JavaScript to function.
   // For this conversion, they are kept as is, but full interactivity might need more work or React-specific libraries for Foundation.
   return (
